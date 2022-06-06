@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class = "PatchOperationRemove">
+	<xpath>Defs/QuestScriptDef[defName="VFEA_OpportunitySite_SealedVault"]/root/nodes/li[@Class="QuestNode_WorldObjectTimeout"]</xpath>
+</Operation>
+
+<Operation Class = "PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="VFEA_AncientBroadcastStation"]/comps/li[@Class="VFEAncients.CompProperties_Quest"]/compClass</xpath>
+	<value>
+      <compClass>VaultsAreEternal.CompQuestOnHackedDetonate</compClass>
+	</value>
+</Operation>
+
+</Patch>
